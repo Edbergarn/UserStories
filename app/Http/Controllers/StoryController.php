@@ -29,7 +29,7 @@ class StoryController extends Controller
             'reason' => 'required'
         ]);
 
-        $story = ('Som en ' . $_POST['role'] . ' vill jag ' . $_POST['activity'] . $_POST['test'] . $_POST['context'] . ' för att ' . $_POST['reason'] . '.');
+        $story = ('Som en ' . $_POST['role'] . ' vill jag ' . $_POST['activity'] . ' ' . $_POST['test'] . ' ' . $_POST['context'] . ' för att ' . $_POST['reason'] . '.');
 
         $uuid = Str::uuid()->toString();
 
@@ -40,9 +40,5 @@ class StoryController extends Controller
         $newStory->save();
 
         return redirect('/story/' . $uuid);
-        
-        return view('story', [
-            'story' => $story
-        ]);
     }
 }
