@@ -8,8 +8,8 @@
 </head>
 <body>
 <p> {{ $story[0]->story }}</p>
-<form action="/" method="POST">
-    <button type="submit" href="/">Skriv en till vettja!</button>
+<form action="/" method="get">
+    <input type="submit" value="Skriv en till vettja!">
 </form>
 </body>
 </html>

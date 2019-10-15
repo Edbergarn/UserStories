@@ -7,7 +7,7 @@
     <title>User Stories</title>
 </head>
 <body>
-    {{-- <div style="width:70%; text-align: center; margin: auto;"> --}}
+    <div style="width:70%; text-align: center; margin: auto;">
         <form action="/story" method="post">
             @csrf
         <p>
@@ -23,14 +23,14 @@
             <input type="text" name="context" id="context">
             för att
             <input type="text" name="reason" id="reason">
-            .
+            
             <input type="submit" value="submit">
         </p>
         </form>
-        {{-- <h2>Exempel</h2> --}}
-        {{-- <p>Som en ingenjör vill jag bli bäst  på programmering för att ta över världen.</p> --}}
-        {{-- <p>Som en ingenjör vill jag alla elever F i engelska för att ta över världen.</p> --}}
-        {{-- <p>Som en ingenjör vill jag alla elever F på programmering för att ta över världen.</p> --}}
-    {{-- </div> --}}
+        <h2>Exempel</h2>
+        <p>Som en ingenjör vill jag bli bäst  på programmering för att ta över världen.</p>
+        <p>Som en ingenjör vill jag alla elever F i engelska för att ta över världen.</p>
+        <p>Som en ingenjör vill jag alla elever F på programmering för att ta över världen.</p>
+    </div>
 </body>
 </html>
