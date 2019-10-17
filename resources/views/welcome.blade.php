@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>User Stories</title>
-</head>
-<body>
-    <div style="width:70%; text-align: center; margin: auto;">
-        <form action="/story" method="post">
+@extends('layout')
+@section('body')
+    <div class="box text" style="background-color: dimgrey;">
+        <h1>Edbergarns Insane UserStories</h1>
+        <form action="/story" method="post" autocomplete="off" class="form-style-4">
             @csrf
         <p>
             Som en 
@@ -24,13 +18,12 @@
             för att
             <input type="text" name="reason" id="reason">
             
-            <input type="submit" value="submit">
+            <input type="submit" value="submit" class="button">
         </p>
         </form>
         <h2>Exempel</h2>
-        <p>Som en ingenjör vill jag bli bäst  på programmering för att ta över världen.</p>
-        <p>Som en ingenjör vill jag alla elever F i engelska för att ta över världen.</p>
-        <p>Som en ingenjör vill jag alla elever F på programmering för att ta över världen.</p>
+        <p>{{ $examples[0]->story ?? "" }}</p>
+        <p>{{ $examples[1]->story ?? ""}}</p>
+        <p>{{ $examples[2]->story ?? ""}}</p>
     </div>
-</body>
-</html>
+@endsection

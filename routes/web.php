@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'StoryController@index');
+
 Route::get('/story/{id}', 'StoryController@show');
 
 Route::post('/story', 'StoryController@store');
