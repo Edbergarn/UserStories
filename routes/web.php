@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/~edbemi17/public/', 'StoryController@index');
+Route::get('/', 'StoryController@index');
 
-Route::get('/~edbemi17/public/story/{id}', 'StoryController@show');
+Route::get('/story/{id}', 'StoryController@show');
 
-Route::post('/~edbemi17/public/story', 'StoryController@store');
+Route::post('/story', 'StoryController@store');
