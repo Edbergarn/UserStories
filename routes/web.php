@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/~edbemi17/public/vafan', 'StoryController@index');
+Route::get('vafan', 'StoryController@index');
 
 Route::get('story/{id}', 'StoryController@show');
 
