@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', 'StoryController@index');
+Route::get('', 'StoryController@index');
 
-Route::get('/story/{id}', 'StoryController@show');
+Route::get('story/{id}', 'StoryController@show');
 
-Route::post('/story', 'StoryController@store');
+Route::post('story', 'StoryController@store');
