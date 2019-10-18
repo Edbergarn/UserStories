@@ -5,13 +5,13 @@
 @endsection
 
 @section('body')
-    <div class="box text" style="background-color: dimgrey;">
+    <div class="box text" style="background-image: linear-gradient(to bottom right, #{{ $color }}, #{{ $color2 }});">
         <h1>Edbergarns Insane UserStories</h1>
         <form action="story" method="post" autocomplete="off" class="form-style-4">
             @csrf
         <p>
             Som en 
-            <input type="text" name="role" id="role">
+            <input type="text" name="role" id="role" autofocus>
             vill jag 
             <input type="text" name="activity" id="activity">
             <select name="test" id="test">

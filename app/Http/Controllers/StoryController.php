@@ -20,8 +20,12 @@ class StoryController extends Controller
 
     public function index(){
         $examples = DB::select('select * from stories ORDER BY rand() LIMIT 3');
+        $color = $this->random_color();
+        $color2 = $this->random_color();
         return view('welcome', [
-            'examples' => $examples
+            'examples' => $examples,
+            'color' => $color,
+            'color2' => $color2
         ]);
     }
 
