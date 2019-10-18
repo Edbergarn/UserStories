@@ -2,7 +2,7 @@
 @section('body')
     <div class="box text" style="background-color: dimgrey;">
         <h1>Edbergarns Insane UserStories</h1>
-        <form action="/story" method="post" autocomplete="off" class="form-style-4">
+        <form action="/~edbemi17/public/story" method="post" autocomplete="off" class="form-style-4">
             @csrf
         <p>
             Som en 
