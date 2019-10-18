@@ -1,4 +1,9 @@
 @extends('layout')
+
+@section('css')
+<link rel="stylesheet" href="css/app.css">    
+@endsection
+
 @section('body')
     <div class="box text" style="background-image: linear-gradient(to bottom right, #{{ $color }}, #{{ $color2 }});">
         <h1>UserStory</h1>

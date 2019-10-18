@@ -1,4 +1,9 @@
 @extends('layout')
+
+@section('css')
+<link rel="stylesheet" href="css/app.css">    
+@endsection
+
 @section('body')
     <div class="box text" style="background-color: dimgrey;">
         <h1>Edbergarns Insane UserStories</h1>
