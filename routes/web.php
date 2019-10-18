@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('', 'StoryController@index');
+Route::get('/', 'StoryController@index');
 
 Route::get('story/{id}', 'StoryController@show');
 
