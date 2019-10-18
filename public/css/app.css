@@ -62,7 +62,7 @@
 .form-style-4 option
 {
   border: none;
-  background-color: dimgrey;
+  background-color: transparent;
   border-radius: 10%;
   color:white;
 }
