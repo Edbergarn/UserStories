@@ -6,6 +6,6 @@
         {{-- <form action="/" method="get"> --}}
             {{-- <input class="button" type="submit" value="Skriv en till vettja!"> --}}
         {{-- </form> --}}
-        <a href="">hej</a>
+        <a href="/">hej</a>
     </div>
 @endsection
