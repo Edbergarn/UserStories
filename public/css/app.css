@@ -66,8 +66,8 @@
   border-radius: 10%;
   color:white;
 }
-.form-style-4 select:focus,
-.form-style-4 option:focus
+.form-style-4 select,
+.form-style-4 option:not(:checked)
 {
   border: none;
   background-color: transparent;
